@@ -1,0 +1,3 @@
+For ML-based virtual screening, a detail tutorial is given at 
+https://projects.volkamerlab.org/teachopencadd/talktorials/T004_compound_similarity.html
+which is practiced in the current work. 

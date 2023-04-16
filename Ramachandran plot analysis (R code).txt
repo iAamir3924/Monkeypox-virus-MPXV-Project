@@ -1,0 +1,29 @@
+NOTE
+For conducting the Ramachandran plot analysis, we wrote and executed the following code in RStudio. The following code will load the pdb file in R, 
+will extract its torsional angles and produce a gradient Ramachandran plot to validate a protein's 3D conformation. We have made this code freely available 
+and we would highly appreciate if you use our code, please do cite its corresponding paper. Thank you
+
+#Set the folder's directory
+setwd("C:/Users/x/xx/xxx")
+
+#load necessary packages
+library(bio3d)
+library(ggplot2)
+
+#loading the protein (.pdb) file
+> pdb <- read.pdb("rm.pdb")
+
+#extracting and plotting the protein's torsional angles
+> tor <- torsion.pdb(pdb)
+> plot(tor$phi, tor$psi)
+
+#create dataframe with phi and psi angles
+> df <- data.frame(Phi=x, Psi=y)
+
+#creating a gradient plot 
+> ggplot(df, aes(x=Phi, y=Psi)) +
++ geom_hex() +
++ scale_fill_gradient(low="purple", high="green") +
++ theme_bw()
+
+Note: After plotting, the image is exported in pdb and post-processed in Adobe Illustrator for adjusting font size. 
