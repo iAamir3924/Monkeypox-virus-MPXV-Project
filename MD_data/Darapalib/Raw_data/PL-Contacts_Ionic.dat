@@ -1,0 +1,3 @@
+  # Frame#   Residue#      Chain    ResName   AtomName  LigandFragment      LigandAtom   Distance
+       112        105          A        GLU        OE2        L-FRAG_4              N1      4.870 
+       146        105          A        GLU        OE2        L-FRAG_4              N1      4.960 
